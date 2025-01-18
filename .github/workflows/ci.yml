@@ -28,6 +28,9 @@ jobs:
     - name: Clean Install dependencies
       run: npm ci
       
+    - name: Fix vulnerabilities
+      run: npm audit fix --force
+      
     - name: Build
       run: npm run build
       
